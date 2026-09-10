@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #f4f1ea;
+  background: #111419;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: #111419; }
+button, a { font: inherit; }
+button, a:focus-visible { outline: 2px solid #e1ad55; outline-offset: 3px; }
+button { cursor: pointer; }
+
+.app-shell { min-height: 100vh; background: linear-gradient(135deg, #111419 0%, #181d23 55%, #25241f 100%); }
+.site-header { border-bottom: 1px solid #343a3d; background: rgba(17, 20, 25, 0.92); }
+.header-inner { display: flex; align-items: center; gap: 2rem; max-width: 1240px; min-height: 76px; margin: 0 auto; padding: 0 2rem; }
+.brand { color: #f0c36a; font-size: 1.45rem; font-weight: 800; letter-spacing: 0.03em; text-decoration: none; }
+.desktop-nav, .header-actions { display: flex; align-items: center; gap: 1.25rem; }
+.desktop-nav { flex: 1; }
+.nav-link, .account-link, .search-control, .mobile-search { border: 0; color: #c6ccd0; background: transparent; text-decoration: none; }
+.nav-link:hover, .nav-link.active, .account-link:hover, .search-control:hover, .mobile-search:hover { color: #f0c36a; }
+.search-control, .mobile-search { border: 1px solid #566066; border-radius: 6px; padding: 0.55rem 1rem; }
+.menu-toggle, .mobile-nav { display: none; }
+.page-content { width: min(100% - 2rem, 1240px); margin: 0 auto; padding: 4rem 0; }
+.placeholder-page { max-width: 720px; margin: 0 auto; padding: 3rem 2rem; border: 1px solid #343a3d; border-radius: 10px; background: rgba(24, 29, 35, 0.78); text-align: center; }
+.placeholder-page h1 { margin: 0 0 1rem; color: #f0c36a; font-size: clamp(2rem, 5vw, 3.5rem); }
+.placeholder-page p { margin: 0; color: #c6ccd0; }
+.placeholder-page a { color: #f0c36a; }
+
+@media (max-width: 720px) {
+  .header-inner { min-height: 68px; padding: 0 1rem; }
+  .desktop-nav, .account-link { display: none; }
+  .header-actions { flex: 1; justify-content: flex-end; gap: 0.75rem; }
+  .menu-toggle { display: grid; gap: 4px; width: 40px; padding: 0.65rem; border: 1px solid #566066; border-radius: 6px; background: transparent; }
+  .menu-toggle span { display: block; height: 2px; background: #f4f1ea; }
+  .mobile-nav { display: grid; gap: 0.25rem; padding: 0 1rem 1rem; }
+  .mobile-nav .nav-link, .mobile-search { width: 100%; padding: 0.8rem 0.75rem; text-align: left; }
+  .page-content { width: min(100% - 1rem, 1240px); padding: 2rem 0; }
+}
