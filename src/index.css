@@ -24,7 +24,7 @@ button { cursor: pointer; }
 .nav-link, .account-link, .search-control, .mobile-search { border: 0; color: #c6ccd0; background: transparent; text-decoration: none; }
 .nav-link:hover, .nav-link.active, .account-link:hover, .search-control:hover, .mobile-search:hover { color: #f0c36a; }
 .account-status { color: #c6ccd0; }
-.account-button { border: 0; padding: 0.25rem 0; color: #c6ccd0; background: transparent; }
+.account-button { border: 0; padding: 0.25rem 0; color: #c6ccd0; background: transparent; font-weight: 600; }
 .account-button:hover { color: #f0c36a; }
 .account-menu { position: relative; }
 .account-icon-button { display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid #566066; border-radius: 50%; color: #f4f1ea; background: transparent; }
