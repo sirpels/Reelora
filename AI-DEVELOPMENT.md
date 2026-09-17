@@ -87,6 +87,10 @@ During final verification, the README was still the default Vite documentation r
 
 Logout needed to be a simple text action instead of a prominent button. Its styling was changed to remove the border and background treatment, and its text weight was adjusted to be slightly heavier than the account email.
 
+### Navbar control borders
+
+During final manual review, the human developer identified unwanted gold borders around the navbar Search, Account/Profile, and Hamburger controls. The requirement was to remove those borders without changing functionality or the rest of the UI. Codex implemented the minimal CSS/UI correction, then verified it with a production build and responsive browser checks.
+
 ## 6. Testing and Verification
 
 The following verification was performed during development:

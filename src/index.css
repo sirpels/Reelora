@@ -27,14 +27,15 @@ button { cursor: pointer; }
 .account-button { border: 0; padding: 0.25rem 0; color: #c6ccd0; background: transparent; font-weight: 600; }
 .account-button:hover { color: #f0c36a; }
 .account-menu { position: relative; }
-.account-icon-button { display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid #566066; border-radius: 50%; color: #f4f1ea; background: transparent; }
-.account-icon-button:hover { border-color: #f0c36a; color: #f0c36a; }
+.account-icon-button { display: grid; width: 38px; height: 38px; place-items: center; border: 0; border-radius: 50%; outline: 0; color: #f4f1ea; background: transparent; }
+.account-icon-button:hover { color: #f0c36a; }
 .account-icon { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
 .account-dropdown { position: absolute; z-index: 12; top: calc(100% + 0.7rem); right: 0; display: grid; min-width: 220px; gap: 0.75rem; padding: 0.9rem 1rem; border: 1px solid #566066; border-radius: 7px; background: #181d23; box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35); }
 .account-dropdown-email { overflow: hidden; color: #f4f1ea; text-overflow: ellipsis; white-space: nowrap; }
 .account-dropdown .account-button { justify-self: start; }
 .header-error { max-width: 1240px; margin: 0 auto; padding: 0.6rem 2rem; color: #f0a7a0; background: #351f23; }
-.search-control, .mobile-search { border: 1px solid #566066; border-radius: 6px; padding: 0.55rem 1rem; }
+.search-control, .mobile-search { border: 0; border-radius: 6px; outline: 0; padding: 0.55rem 1rem; }
+.search-control:focus-visible, .mobile-search:focus-visible, .account-icon-button:focus-visible, .menu-toggle:focus-visible { outline: 2px solid #c6ccd0; outline-offset: 3px; }
 .navbar-search-overlay { position: fixed; z-index: 10; inset: 76px 0 auto; padding: 1rem; background: rgba(17, 20, 25, 0.72); }
 .navbar-search-panel { width: min(100%, 1080px); max-height: calc(100vh - 100px); margin: 0 auto; overflow: auto; padding: 1rem; border: 1px solid #566066; border-radius: 8px; background: #181d23; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35); }
 .navbar-search-heading { display: flex; align-items: end; gap: 0.75rem; }
@@ -119,7 +120,7 @@ button { cursor: pointer; }
   .header-inner { min-height: 68px; padding: 0 1rem; }
   .desktop-nav, .account-link { display: none; }
   .header-actions { flex: 1; justify-content: flex-end; gap: 0.75rem; }
-  .menu-toggle { display: grid; gap: 4px; width: 40px; padding: 0.65rem; border: 1px solid #566066; border-radius: 6px; background: transparent; }
+  .menu-toggle { display: grid; gap: 4px; width: 40px; padding: 0.65rem; border: 0; border-radius: 6px; outline: 0; background: transparent; }
   .menu-toggle span { display: block; height: 2px; background: #f4f1ea; }
   .mobile-nav { display: grid; gap: 0.25rem; padding: 0 1rem 1rem; }
   .mobile-nav .nav-link, .mobile-search { width: 100%; padding: 0.8rem 0.75rem; text-align: left; }
