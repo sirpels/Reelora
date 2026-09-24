@@ -89,6 +89,7 @@ button { cursor: pointer; }
 .details-poster { display: grid; aspect-ratio: 2 / 3; max-height: 480px; place-items: center; overflow: hidden; border: 1px solid #343a3d; border-radius: 8px; background: #2b3035; }
 .details-poster img { width: 100%; height: 100%; object-fit: cover; }
 .details-poster span { padding: 1rem; color: #aeb7bc; text-align: center; }
+.details-content { min-width: 0; }
 .details-content h1 { margin: 0 0 0.75rem; color: #f4f1ea; font-size: clamp(2rem, 5vw, 4rem); line-height: 1.05; }
 .details-subtitle { margin: 0 0 1.75rem; color: #f0c36a; }
 .details-save-controls { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 1.75rem; }
@@ -96,7 +97,7 @@ button { cursor: pointer; }
 .details-list { display: grid; gap: 0.9rem; margin: 0 0 1.75rem; }
 .detail-field { display: grid; grid-template-columns: 110px 1fr; gap: 1rem; border-bottom: 1px solid #343a3d; padding-bottom: 0.7rem; }
 .detail-field dt { color: #89939a; font-weight: 700; }
-.detail-field dd { margin: 0; color: #f4f1ea; }
+.detail-field dd { min-width: 0; margin: 0; color: #f4f1ea; overflow-wrap: anywhere; }
 .details-plot { margin: 0 0 1.75rem; color: #c6ccd0; line-height: 1.7; }
 .imdb-link { display: inline-block; border: 1px solid #f0c36a; border-radius: 6px; padding: 0.7rem 1rem; }
 .imdb-link:hover { color: #111419; background: #f0c36a; }

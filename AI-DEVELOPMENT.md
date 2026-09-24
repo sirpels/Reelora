@@ -91,6 +91,12 @@ Logout needed to be a simple text action instead of a prominent button. Its styl
 
 During final manual review, the human developer identified unwanted gold borders around the navbar Search, Account/Profile, and Hamburger controls. The requirement was to remove those borders without changing functionality or the rest of the UI. Codex implemented the minimal CSS/UI correction, then verified it with a production build and responsive browser checks.
 
+### Mobile horizontal overflow
+
+During the final responsive review, the movie details layout could allow long metadata values to preserve their intrinsic grid-item width and extend the page beyond a narrow viewport. The minimal correction was to allow the details content and metadata value column to shrink, and to wrap long metadata safely with `min-width: 0` and `overflow-wrap: anywhere`. No Firebase, authentication, Vercel, or product behavior was changed.
+
+The change was reviewed against the existing 375px and 390px responsive rules and the desktop layout. The production build completed successfully. Browser-assisted verification was attempted, but headless Chrome could not be run in the restricted environment, so no successful browser-pass claim is recorded here. No automated test suite is configured.
+
 ## 6. Testing and Verification
 
 The following verification was performed during development:
